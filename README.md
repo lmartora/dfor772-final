@@ -25,9 +25,13 @@ The program works first by importing several Autopsy-provided libraries that eve
 Once a file matching this critera is found, a "blackboard artifact" is created so that the found packet capture is sorted under the `Data Artifacts > Interesting Files > Packet Captures` of the results tree. The artifact is also indexed so that if a user wants to use keyword search later in the case to find packet captures, they will be able to see them in keyword search. Finally, once the plugin is done going through every file, it prints a message in the `Ingest Messages` tool of how many packet captures were found.
 #### Source code is viewable in `netArchaeFinal.py`
 
+### Requirements
+- Autopsy 4.19.3 or later
+- Python 3.x
+- A disk image that contains packet capture files ([Sample](https://drive.google.com/file/d/1i1Cm7Jk7j1BNvLYjlJLubs0TD4ravh3-/view?usp=sharing))
 
 ## Usage Directions
-1. ***(Optional, for testing)*** Begin the download on the sample disk image provided [here](https://drive.google.com/file/d/1i1Cm7Jk7j1BNvLYjlJLubs0TD4ravh3-/view?usp=sharing), which contains several packet captures for the program to find
+1. ***(Optional, for testing)*** Begin the download on the sample disk image provided
 2. Run Autopsy and close the `Welcome` box
 3. On the `Tools` toolbar, click `Python Plugins`
 4. Create a new folder named `NetArchaeFinal`

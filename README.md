@@ -11,6 +11,7 @@ netArchaeFinal is an expansion of netArchae which does all of what the base plug
 #### These are significant changes because pcapng is a more up to date format for pcaps literally meaning "packet capture new generation" that is being more widely used, and is what one of the most popular packet capturing program Wireshark defaults to for saving captures; and because finding files based on magic numbers can find pcaps with mismatched file extensions that were attempted to be hidden by purposefully changing the extension.
 
 ### How it works
+The program works first by importing several Autopsy-provided libraries that every plugin needs to function. With one of the imports, `IngestModuleFactoryAdapter`, a "factory" is created to provide the module with basic information on it as well as the ability to make ingest modules that work with the files in the image. 
 #### Source code is viewable in ```NetArchaeFinal.py```
 
 

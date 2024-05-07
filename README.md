@@ -21,6 +21,7 @@ The program works first by importing several Autopsy-provided libraries that eve
 - Files with a magic header `A1 B2 3C 4D`
 - Files with a magic header `4D 3C B2 A1`
 - Files with a magic header `0A 0D 0D 0A`
+
 Once a file matching this critera is found, a "blackboard artifact" is created so that the found packet capture is sorted under the `Data Artifacts > Interesting Files > Packet Captures` of the results tree. The artifact is also indexed so that if a user wants to use keyword search later in the case to find packet captures, they will be able to see them in keyword search. Finally, once the plugin is done going through every file, it prints a message in the `Ingest Messages` tool of how many packet captures were found.
 #### Source code is viewable in `NetArchaeFinal.py`
 
